@@ -39,6 +39,10 @@
     {
         font-size: var(--title);
     }
+    .body
+    {
+        flex-direction: column;
+    }
 }
 
 body
