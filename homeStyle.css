@@ -21,10 +21,23 @@
     }
 }
 
+@media (min-height:1080px) {
+    .title
+    {
+        width: max-content;
+    }
+    a
+    {
+        font-size: var(--title);
+    }
+}
+
 body
 {
     --primary: rgba(255,100,70);
     --secondary: rgb(225, 175, 45);
+    --title:xx-large;
+    --main:large;
 
     background-color: rgb(35, 35, 35);
 
@@ -38,7 +51,7 @@ body
 {
     background-color: var(--primary);
 
-    font-size:xx-large;
+    font-size:var(--title);
     font-family:'Custom','Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
 
@@ -60,7 +73,7 @@ body
 a
 {   
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
+    font-size: var(--main);
     font-weight: bold;
 
     color: white;
