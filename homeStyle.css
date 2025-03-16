@@ -1,0 +1,81 @@
+@font-face {
+    font-family: Custom;
+    src: url(/home/ananthanarayan/Coding/Webpage/Bavista_Soulare.ttf);
+}
+
+@keyframes linkHover {
+    from
+    {
+        text-decoration: none;
+        
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    to
+    {
+        text-decoration: line-through;
+        background-color: rgba(0, 0, 0, 0.35);
+        border-radius: 15px;
+        padding: 15px;
+    }
+}
+
+body
+{
+    --primary: rgba(255,100,70);
+    --secondary: rgb(225, 175, 45);
+
+    background-color: rgb(35, 35, 35);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.title
+{
+    background-color: var(--primary);
+
+    font-size:xx-large;
+    font-family:'Custom','Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+
+    padding: 2%;
+    border: 2%;
+    border-radius: 35px;
+    box-shadow: 0px 0px 15px 1px rgba(255, 99, 71, 0.75);
+}
+
+.navbar
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    
+}
+
+a
+{   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-weight: bold;
+
+    color: white;
+
+    text-decoration: none;
+}
+a:hover
+{
+    animation:linkHover;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+}
+
+.content
+{
+    color: white;
+    white-space: pre;
+}

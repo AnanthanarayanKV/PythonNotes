@@ -1,0 +1,28 @@
+Nditer
+Nditer is a function in Numpy.
+It is used to select all the elements for an array.
+
+
+Appending and array.
+
+Adding a value to the end of something is called Appending. In this we add values to the end of the array
+using .append() function using Numpy.
+Array can be appended because it is an mutable datatype.
+A tuple cannot be appended because it's a immutable datatype(Non editable)
+We can append literals and variables into an array
+
+np.arange()
+Used to get elements from a given range.
+
+Matrix manipulation
+In python a matrix can be represented using a 2D list or a 2D array
+
+Matrix operations
+1.add() - add elements of matrices
+2.subtract() - subtract elements
+3.divide() - divide elements
+4.multiply() - multiply elements
+5.dot() -  multiply row and column of the matrices
+6.sqrt() - square of each elements
+7.sum(x,axis) - sum of elements in a matrix, can specify sum of row or column
+8."T" - transpose
