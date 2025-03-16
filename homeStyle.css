@@ -124,7 +124,7 @@ a:hover
 
 .content
 {
-    display: flex;
+    display: flexbox;
     gap: 5%;
 
 
