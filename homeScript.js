@@ -1,10 +1,6 @@
-function copyCode() {
-    var copyText = document.getElementById("code");
-  
-    copyText.select();
-    copyText.setSelectionRange(0, 99999);
-  
-    navigator.clipboard.writeText(copyText.value);
-  
-    alert("Copied the text: " + copyText.value);
-  } 
+fetch('05-03-notes.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('notes1').textContent = data;
+            })
+            .catch(error => console.error('Error fetching the text file:', error));

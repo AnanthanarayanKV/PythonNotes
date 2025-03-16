@@ -1,6 +1,14 @@
 @font-face {
-    font-family: Custom;
-    src: url(/home/ananthanarayan/Coding/Webpage/Bavista_Soulare.ttf);
+    font-family: Bavista;
+    src: url(/Bavista_Soulare.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(MontserratAlternates-Regular.ttf);
+}
+@font-face {
+    font-family: Heavitas;
+    src: url(Heavitas.ttf);
 }
 
 @keyframes linkHover {
@@ -21,10 +29,11 @@
     }
 }
 
-@media (min-height:1080px) {
+@media (max-width:1080px) {
     .title
     {
         width: max-content;
+        justify-self: center;
     }
     a
     {
@@ -41,18 +50,20 @@ body
 
     background-color: rgb(35, 35, 35);
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .title
 {
     background-color: var(--primary);
 
+    width: 90vh;
+
     font-size:var(--title);
-    font-family:'Custom','Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:'Bavista';
     text-align: center;
 
     padding: 2%;
@@ -72,7 +83,7 @@ body
 
 a
 {   
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat';
     font-size: var(--main);
     font-weight: bold;
 
@@ -91,4 +102,26 @@ a:hover
 {
     color: white;
     white-space: pre;
+    font-family: 'Montserrat';
+}
+
+.notes
+{
+    flex: 2;
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: var(--main);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.content
+{
+    display: flex;
+    gap: 5%;
+    align-items: center;
+
 }
