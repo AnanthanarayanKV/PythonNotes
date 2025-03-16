@@ -39,7 +39,7 @@
     {
         font-size: var(--title);
     }
-    .body
+    .content
     {
         flex-direction: column;
     }
@@ -64,7 +64,7 @@ body
 {
     background-color: var(--primary);
 
-    width: 90vh;
+    width: 150vh;
 
     font-size:var(--title);
     font-family:'Bavista';
@@ -126,6 +126,8 @@ a:hover
 {
     display: flex;
     gap: 5%;
+
+
     align-items: center;
 
 }
